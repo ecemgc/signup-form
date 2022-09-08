@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Varela', sans-serif;
+    background: #120e35;
+}
+
+.form{
+    background-image: linear-gradient(#e70909,#f3616194);
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding: 120px 50px;
+    box-shadow: 2px 2px 8px #000000;
+}
+
+.img-overlay::before{
+    content: "";
+    background-image:url("./elliott-mason-Dxj8MmneY80-unsplash.jpg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 600px;
+    opacity: 0.80;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.icon{
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: #120e35;
+    cursor: pointer;
+
+}
+
+.form h1{
+    color: #120e35;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #120e35;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    font-style: bold;
+    border-bottom: 1px solid #1e1950;
+}
+
+.inputs:hover{
+    border-bottom: 3px solid #da6c51;
+    transition: 0.2s ease-in-out;
+}
+
+#email,#email::placeholder{
+    width: 100%;
+    border: none;
+    background:none;
+    outline: none;
+    color: none;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+#password,#password::placeholder{
+    width: 100%;
+    border: none;
+    background:none;
+    outline: none;
+    color: none;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+#password2,#password2::placeholder{
+    width: 100%;
+    border: none;
+    background:none;
+    outline: none;
+    font-style: bold;
+    color: #da6c51;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.button{
+    background-color: #6ebd7f;
+    border: none;
+    color: #79210b;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    opacity: 0.9;
+    cursor: pointer;
+}
+.button:hover{
+    box-shadow: 0 0 3px 3px #da6c51;
+    transition: 0.2s ease-in-out;
+    color: #693225;
+    opacity: 0.7;
+}
+
+
+
